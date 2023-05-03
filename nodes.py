@@ -1,4 +1,4 @@
-# We'll be using our Node class
+
 class Node:
   def __init__(self, value, next_node=None):
     self.value = value
@@ -35,7 +35,6 @@ class LinkedList:
       current_node = current_node.get_next_node()
     return string_list
   
-  # Define your remove_node method below:
 
   def remove_node(self, value_to_remove):
     current_node = self.get_head_node()
