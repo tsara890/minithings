@@ -71,7 +71,7 @@ class DQN_agent:
 
     def get_action(self, state):
         self.epsilon = 80 - self.n_games
-        if random.randint(0, 200) > self.epsilon:
+        if random.randint(0, 200) < self.epsilon:
             final_move = [0, 0, 0]
             random_idx = random.randint(0, 2)
             final_move[random_idx] = 1
